@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Первак](https://up.htmlacademy.ru/htmlcss/26/user/1122549).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
