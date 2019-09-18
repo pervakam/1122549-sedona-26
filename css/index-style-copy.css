@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  background-image: url("C:/Users/pam/Desktop/HTML academy/sedona/1122549-sedona-26/img/backgroundphoto.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  background-color: white;
+}
+
+.site-navigation .advantages {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  opacity: 0.3;
+}
+
+.intro h1 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.intro p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.reason-one, .reason-two {
+  list-style: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+  line-height: 21px;
+  border: black;
+}
+
+.advantages {
+  color: #000000;
+}
+
