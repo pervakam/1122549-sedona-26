@@ -8,7 +8,16 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  background-color: #f2f2f2;
   background-image: url("../img/backgroundphoto.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.inner-page {
+  color: #000000;
+  background-color: #f2f2f2;
+  background-image: url("../img/filter-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -17,16 +26,17 @@ a {
   text-decoration: none;
 }
 
-.site-navigation {
-  background-color: white;
+.site-navigation li{
+  width: 239px;
+  height: 56px;
+  background-color: #ffffff;
+  vertical-align: middle;
 }
 
-.site-navigation .advantages {
-  list-style: none;
-}
-
-.site-navigation a {
+.site-navigation a{
   color: #000000;
+  font-weight: 700;
+  background-color: #ffffff;
 }
 
 .site-navigation a:hover {
@@ -37,25 +47,103 @@ a {
   opacity: 0.3;
 }
 
-.intro h1 {
+.site-navigation a:active {
+  color: #766357;
+}
+
+.site-navigation,
+.advantages,
+.social-networks li,
+.result li,
+.filter li {
+  list-style: none;
+}
+
+.reason .h2{
   font-size: 21px;
   font-weight: 700;
-}
-
-.intro p {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.reason-one, .reason-two {
-  list-style: none;
-  color: #ffffff;
-  background-color: #81b3d2;
   line-height: 21px;
-  border: black;
 }
 
 .advantages {
   color: #000000;
 }
 
+.booking [type="submit"] {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.booking [type="submit"]:hover {
+  background-color: #669ec0;
+}
+
+.booking [type="submit"]:focus {
+  background-color: #5496bd;
+}
+
+.hashtag a{
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.page-footer {
+  width: 1200px;
+  height: 120px;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.check .button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+  border: none;
+}
+
+.check .button:hover {
+  background-color: #604e43;
+}
+
+.check .button:focus {
+  background-color: #503e33;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+legend {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filter ul {
+  color: #ffffff;
+  line-height: 36px;
+}
+
+.more {
+  background-color: #81b3d2;
+  width: 110px;
+  height: 27px;
+
+}
