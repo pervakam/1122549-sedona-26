@@ -3,14 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>City of Sedona</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
 <header class="page-header">
   <div class="logo">
     <a href="index.html"><img src="img/logo.png" width="140" height="72" alt="лого Седона"></a>
   </div>
   <nav class="main-menu">
-    <ul>
+    <ul class="site-navigation">
       <li><a href="#">Информация</a></li>
       <li><a href="#">Фото и видео</a></li>
       <li><a href="#">Карта штата</a></li>
@@ -22,21 +25,41 @@
   <h1 class="visually-hidden">Подходящие варианты жилья</h1>
 
   <section>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <h2>Инфраструктура:</h2>
-      <input type="checkbox" name="pull" id="pull-field" checked>
-      <label for="pull-field">Бассейн</label>
-      <input type="checkbox" name="parking" id="parking-field">
-      <label for="parking-field">Парковка</label>
-      <input type="checkbox" name="wi-fi" id="wifi-field">
-      <label for="wifi-field">Wi-fi</label>
-      <h2>Тип жилья:</h2>
-      <input type="checkbox" name="hotel" id="hotel-field" checked>
-      <label for="hotel-field">Гостиница</label>
-      <input type="checkbox" name="motel" id="motel-field" checked>
-      <label for="motel-field">Мотель</label>
-      <input type="checkbox" name="apartments" id="apartments-field" checked>
-      <label for="apartments-field">Апартаменты</label>
+    <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <ul>
+          <li class="filter-option">
+            <input type="checkbox" name="pull" id="pull-field" checked>
+            <label for="pull-field">Бассейн</label>
+          </li>
+          <li class="filter-option">
+            <input type="checkbox" name="parking" id="parking-field">
+            <label for="parking-field">Парковка</label>
+          </li>
+          <li class="filter-option">
+            <input type="checkbox" name="wi-fi" id="wifi-field">
+            <label for="wifi-field">Wi-fi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+          <li class="filter-option">
+            <input type="checkbox" name="hotel" id="hotel-field" checked>
+            <label for="hotel-field">Гостиница</label>
+          </li>
+          <li class="filter-option">
+            <input type="checkbox" name="motel" id="motel-field" checked>
+            <label for="motel-field">Мотель</label>
+          </li>
+          <li class="filter-option">
+            <input type="checkbox" name="apartments" id="apartments-field" checked>
+            <label for="apartments-field">Апартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
     </form>
   </section>
 
@@ -50,7 +73,7 @@
         </h3>
         <span>Гостиница</span>
         <span>От 4000 р.</span>
-        <a href="#" class="more">Подробнее</a>
+        <botton><a href="#" class="more">Подробнее</a></botton>
         <a href="#" class="book">Забронировать</a>
         <div class="rating">
           <p>Рейтинг:8,5</p>
