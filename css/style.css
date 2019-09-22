@@ -26,14 +26,18 @@ a {
   text-decoration: none;
 }
 
-.site-navigation li{
+.visually-hidden {
+  display: none;
+}
+
+.site-navigation li {
   width: 239px;
   height: 56px;
   background-color: #ffffff;
   vertical-align: middle;
 }
 
-.site-navigation a{
+.site-navigation a {
   color: #000000;
   font-weight: 700;
   background-color: #ffffff;
@@ -59,7 +63,7 @@ a {
   list-style: none;
 }
 
-.reason .h2{
+.reason .h2 {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -88,10 +92,11 @@ a {
 }
 
 .booking [type="submit"]:focus {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
-.hashtag a{
+.hashtag a {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
@@ -123,6 +128,7 @@ a {
 }
 
 .check .button:focus {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -142,8 +148,55 @@ legend {
 }
 
 .more {
+  font-weight: 700;
   background-color: #81b3d2;
   width: 110px;
   height: 27px;
-
+  color: #ffffff;
 }
+
+.more:hover {
+  background-color: #669ec0;
+}
+
+.more:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.book {
+  font-weight: 700;
+  background-color: #766357;
+  width: 142px;
+  height: 27px;
+  color: #ffffff;
+}
+
+.book:hover {
+  background-color: #604e43;
+}
+
+.book:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.result-item {
+  background-color: #ffffff;
+  padding-top: 1px;
+}
+
+h3 a {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.rating {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  color: #666666;
+}
+
+
