@@ -27,7 +27,11 @@ a {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .site-navigation li {
@@ -73,7 +77,7 @@ a {
   color: #000000;
 }
 
-.booking [type="submit"] {
+.booking input[type="submit"] {
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -87,11 +91,11 @@ a {
   border: none;
 }
 
-.booking [type="submit"]:hover {
+.booking input[type="submit"]:hover {
   background-color: #669ec0;
 }
 
-.booking [type="submit"]:focus {
+.booking input[type="submit"]:focus {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
@@ -136,7 +140,7 @@ a {
   border: none;
 }
 
-legend {
+.filter legend {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -183,12 +187,10 @@ legend {
 
 .result-item {
   background-color: #ffffff;
-  padding-top: 1px;
 }
 
-h3 a {
-  color: #000000;
-  font-size: 21px;
+.result-item a {
+  color: #ffffff;
   font-weight: 700;
 }
 
