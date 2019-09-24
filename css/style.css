@@ -42,6 +42,11 @@ a {
   height: 56px;
   background-color: #ffffff;
   vertical-align: middle;
+
+}
+
+.site-navigation .logo{
+  width: 244px;
 }
 
 .site-navigation a {
@@ -218,7 +223,7 @@ body {
 
 body {
   /* Временно для сетки */
-  background-image: url("../img/sedona-index.jpg");
+  /*background-image: url("../img/sedona-index.jpg");*/
   background-repeat: no-repeat;
 }
 
@@ -229,9 +234,20 @@ body {
   outline: 1px solid green;
   opacity: 0.5;
   min-height: 486px;
-  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.site-navigation {
+  /* Временно для сетки */
+  width: 1200px;
+  min-height: 56px;
+
+  outline: 1px solid red;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .logo {
@@ -246,14 +262,31 @@ body {
   /*display: block;*/
 }
 
-.site-navigation {
+.main-menu {
+  width: 100%;
+  margin-bottom: 76px;
+
   /* Временно для сетки */
   min-height: 56px;
-  background-color: red;
-  outline: 1px solid red;
+}
+
+.first-text {
+  /* Временно для сетки */
+  width: 459px;
+  height: 353px;
+  background-color: deepskyblue;
+  outline: 1px solid deepskyblue;
   opacity: 0.5;
   margin: 0;
   padding: 0;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
 
+.page-header .container {
+  display: flex;
+}
