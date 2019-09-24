@@ -109,12 +109,12 @@ a {
   font-weight: 700;
 }
 
-.page-footer {
-  width: 1200px;
-  height: 120px;
-  background-color: #ffffff;
-  opacity: 0.9;
-}
+/*.page-footer {*/
+/*  width: 1200px;*/
+/*  height: 120px;*/
+/*  background-color: #ffffff;*/
+/*  opacity: 0.9;*/
+/*}*/
 
 .check .button {
   font: inherit;
@@ -202,6 +202,58 @@ a {
   height: 27px;
   background-color: #f2f2f2;
   color: #666666;
+}
+
+
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1960px;
+  min-height: 4316px;
+  background-color: #f2f2f2;
+
+}
+
+body {
+  /* Временно для сетки */
+  background-image: url("../img/sedona-index.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-header {
+  /* Временно для сетки */
+  margin-top: 27px;
+  background-color: green;
+  outline: 1px solid green;
+  opacity: 0.5;
+  min-height: 486px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  /* Временно для сетки */
+  width: 140px;
+  height: 72px;
+  background-color: yellow;
+  outline: 1px solid yellow;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+  /*display: block;*/
+}
+
+.site-navigation {
+  /* Временно для сетки */
+  min-height: 56px;
+  background-color: red;
+  outline: 1px solid red;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
 }
 
 
