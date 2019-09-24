@@ -10,7 +10,7 @@ body {
   text-align: center;
   background-color: #f2f2f2;
   background-image: url("../img/backgroundphoto.jpg");
-  background-position: top center;
+  background-position: top -27px center;
   background-repeat: no-repeat;
 }
 
@@ -41,18 +41,18 @@ a {
   width: 239px;
   height: 56px;
   background-color: #ffffff;
-  vertical-align: middle;
-
-}
-
-.site-navigation .logo{
-  width: 244px;
+  display: block;
 }
 
 .site-navigation a {
   color: #000000;
   font-weight: 700;
   background-color: #ffffff;
+}
+
+.site-navigation .logo {
+  width: 244px;
+
 }
 
 .site-navigation a:hover {
@@ -215,7 +215,7 @@ a {
 
 html,
 body {
-  min-width: 1960px;
+  min-width: 1280px;
   min-height: 4316px;
   background-color: #f2f2f2;
 
@@ -223,17 +223,18 @@ body {
 
 body {
   /* Временно для сетки */
-  /*background-image: url("../img/sedona-index.jpg");*/
+  background-image: url("../img/sedona-index.jpg");
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
 .page-header {
   /* Временно для сетки */
-  margin-top: 27px;
+
   background-color: green;
   outline: 1px solid green;
   opacity: 0.5;
-  min-height: 486px;
+  min-height: 565px;
   flex-direction: column;
   align-items: center;
 }
@@ -242,7 +243,6 @@ body {
   /* Временно для сетки */
   width: 1200px;
   min-height: 56px;
-
   outline: 1px solid red;
   opacity: 0.5;
   margin: 0;
@@ -270,15 +270,15 @@ body {
   min-height: 56px;
 }
 
-.first-text {
+.welcome {
   /* Временно для сетки */
   width: 459px;
   height: 353px;
   background-color: deepskyblue;
   outline: 1px solid deepskyblue;
   opacity: 0.5;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 21px;
+
 }
 
 .container {
@@ -289,4 +289,28 @@ body {
 
 .page-header .container {
   display: flex;
+}
+
+.polygon {
+  /* Временно для сетки */
+  width: 1201px;
+  height: 59px;
+  background-color: black;
+  outline: 1px solid black;
+  opacity: 0.5;
+}
+
+.container-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .intro {
+  min-height: 216px;
+  background-color: darkgoldenrod;
+  outline: 1px solid darkgoldenrod;
+  opacity: 0.5;
+  padding-top: 10px;
 }
