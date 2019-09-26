@@ -21,6 +21,14 @@ body {
   background-repeat: no-repeat;
 }
 
+html,
+body {
+  min-width: 1200px;
+  min-height: 2762px;
+  /* Временно для сетки */
+  opacity: 0.8;
+}
+
 .inner-page {
   color: #000000;
   background-color: #f2f2f2;
@@ -51,6 +59,10 @@ a {
   align-items: center;
 }
 
+.page-header .container {
+  display: flex;
+}
+
 .main-menu {
   width: 100%;
   margin-bottom: 76px;
@@ -59,11 +71,13 @@ a {
 
 .site-navigation {
   /* Временно для сетки */
-  width: 1200px;
+  min-width: 1200px;
   min-height: 56px;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .site-navigation .logo {
@@ -72,18 +86,16 @@ a {
   height: 72px;
   margin: 0;
   padding: 0;
-  /*display: block;*/
 }
 
 .site-navigation li {
   width: 240px;
   height: 56px;
   background-color: #ffffff;
-  display: block;
 }
 
-
 .site-navigation a {
+  /* Разобраться с позиционированием */
   color: #000000;
   font-weight: 700;
 }
@@ -108,11 +120,91 @@ a {
   list-style: none;
 }
 
-.reason .h2 {
+.container {
+  margin: 0 0;
+  padding: 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  /* Временно для сетки */
+  width: 459px;
+  height: 353px;
+  margin-bottom: 21px;
+}
+
+.polygon {
+  /* Временно для сетки */
+  width: 1200px;
+  height: 59px;
+}
+
+.intro {
+  min-width: 1200px;
+  min-height: 216px;
+  margin: -1px 0;
+  background-color: #ffffff;
+  text-align: justify-all;
+}
+
+.intro h1 {
+  /* Разобраться с позиционированием */
+  width: 445px;
+  height: 48px;
   font-size: 21px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 26px;
+  margin: 60px 379px 20px;
 }
+
+.intro p {
+  /* Разобраться с позиционированием */
+  width: 490px;
+  height: 13px;
+  color: #333333;
+  font-weight: 400;
+  margin: 32px 340px 56px 352px;
+}
+
+.reason-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: justify-all;
+}
+
+.reason {
+  width: 400px;
+  min-height: 256px;
+  background-color: #81b3d2;
+}
+
+.reason-image {
+  width: 800px;
+  height: 256px;
+  background-image: url("../img/city.jpg");
+  background-position-y: -77px;
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+
+/*.reason .h2 {*/
+/*  font-size: 21px;*/
+/*  font-weight: 700;*/
+/*  line-height: 21px;*/
+/*}*/
 
 .advantages {
   color: #000000;
@@ -242,81 +334,4 @@ a {
   color: #666666;
 }
 
-html,
-body {
-  min-width: 1280px;
-  min-height: 2762px;
-  background-color: #f2f2f2;
 
-}
-
-.welcome {
-  /* Временно для сетки */
-  width: 459px;
-  height: 353px;
-  margin-bottom: 21px;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
-.page-header .container {
-  display: flex;
-}
-
-.polygon {
-  /* Временно для сетки */
-  width: 1201px;
-  height: 59px;
-}
-
-.container-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.container .intro {
-  width: 1200px;
-  height: 213px;
-  margin-top: -13px;
-  padding: 0;
-}
-
-
-.intro h1 {
-  width: 440px;
-  height: 48px;
-  font-size: 21px;
-  font-weight: 700;
-  padding: 57px 379px;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.intro p {
-  margin-top: -25px;
-  padding: 0 352px;
-  width: 489px;
-  height: 13px;
-  color: #333333;
-  font-weight: 400;
-}
-
-.container .reason {
-  width: 400px;
-  height: 256px;
-  background-color: #81b3d2;
-}
-
-.reason {
-  width: 280px;
-  height: 146px;
-  line-height: 21px;
-  /* Временно для сетки */
-  opacity: 0.5;
-}
