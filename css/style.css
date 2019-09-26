@@ -42,6 +42,8 @@ a {
   height: 56px;
   background-color: #ffffff;
   display: block;
+  /* Временно для сетки */
+  opacity: 0.5;
 }
 
 .site-navigation a {
@@ -209,31 +211,23 @@ a {
   color: #666666;
 }
 
-
-/* ----- Сеточные стили ----- */
-
-
 html,
 body {
   min-width: 1280px;
-  min-height: 4316px;
+  min-height: 2762px;
   background-color: #f2f2f2;
 
 }
 
-body {
-  /* Временно для сетки */
-  background-image: url("../img/sedona-index.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
+/*body {*/
+/*  !* Временно для сетки *!*/
+/*  background-image: url("../img/sedona-index.jpg");*/
+/*  background-position: top center;*/
+/*  background-repeat: no-repeat;*/
+/*}*/
 
 .page-header {
   /* Временно для сетки */
-
-  background-color: green;
-  outline: 1px solid green;
-  opacity: 0.5;
   min-height: 565px;
   flex-direction: column;
   align-items: center;
@@ -243,20 +237,18 @@ body {
   /* Временно для сетки */
   width: 1200px;
   min-height: 56px;
-  outline: 1px solid red;
-  opacity: 0.5;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.logo {
+.site-navigation .logo {
   /* Временно для сетки */
+  background-image: url("../img/logo-sedona.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
   width: 140px;
   height: 72px;
-  background-color: yellow;
-  outline: 1px solid yellow;
-  opacity: 0.5;
   margin: 0;
   padding: 0;
   /*display: block;*/
@@ -265,7 +257,6 @@ body {
 .main-menu {
   width: 100%;
   margin-bottom: 76px;
-
   /* Временно для сетки */
   min-height: 56px;
 }
@@ -274,11 +265,7 @@ body {
   /* Временно для сетки */
   width: 459px;
   height: 353px;
-  background-color: deepskyblue;
-  outline: 1px solid deepskyblue;
-  opacity: 0.5;
   margin-bottom: 21px;
-
 }
 
 .container {
@@ -295,9 +282,6 @@ body {
   /* Временно для сетки */
   width: 1201px;
   height: 59px;
-  background-color: black;
-  outline: 1px solid black;
-  opacity: 0.5;
 }
 
 .container-bottom {
@@ -308,9 +292,42 @@ body {
 }
 
 .container .intro {
-  min-height: 216px;
-  background-color: darkgoldenrod;
-  outline: 1px solid darkgoldenrod;
+  width: 1200px;
+  height: 213px;
+  margin-top: -13px;
+  padding: 0;
+}
+
+
+.intro h1 {
+  width: 440px;
+  height: 48px;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 57px 379px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.intro p {
+  margin-top: -25px;
+  padding: 0 352px;
+  width: 489px;
+  height: 13px;
+  color: #333333;
+  font-weight: 400;
+}
+
+.container .reason {
+  width: 400px;
+  height: 256px;
+  background-color: #81b3d2;
+}
+
+.reason {
+  width: 280px;
+  height: 146px;
+  line-height: 21px;
+  /* Временно для сетки */
   opacity: 0.5;
-  padding-top: 10px;
 }
