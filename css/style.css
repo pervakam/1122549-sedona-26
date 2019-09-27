@@ -121,8 +121,6 @@ a {
 }
 
 .container {
-  margin: 0 0;
-  padding: 0 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -142,18 +140,20 @@ a {
   width: 459px;
   height: 353px;
   margin-bottom: 21px;
+
 }
 
 .polygon {
   /* Временно для сетки */
   width: 1200px;
   height: 59px;
+  margin: 0 -1px 0 -2px;
 }
 
 .intro {
   min-width: 1200px;
-  min-height: 216px;
-  margin: -1px 0;
+  min-height: 217px;
+  margin: -2px 0;
   background-color: #ffffff;
   text-align: justify-all;
 }
@@ -182,33 +182,177 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: justify-all;
+  width: 1200px;
+  margin: 1px 2px 0 0;
+  list-style: none;
 }
 
-.reason {
+.reason-item .reason-city {
   width: 400px;
-  min-height: 256px;
+  height: 256px;
   background-color: #81b3d2;
+  color: #ffffff;
+  line-height: 21px;
 }
 
-.reason-image {
+.reason-city-image {
   width: 800px;
   height: 256px;
   background-image: url("../img/city.jpg");
   background-position-y: -77px;
-  /*background-repeat: no-repeat;*/
   background-size: cover;
 }
 
+.reason-city h2 {
+  min-width: 20px;
+  min-height: 50px;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 47px 105px 0 105px;
+}
 
-/*.reason .h2 {*/
-/*  font-size: 21px;*/
-/*  font-weight: 700;*/
-/*  line-height: 21px;*/
-/*}*/
+.reason-city span {
+  font-weight: 400;
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+.reason-city p {
+  min-width: 280px;
+  min-height: 42px;
+  font-weight: 400;
+  margin: 22px 55px 64px;
+}
 
 .advantages {
-  color: #000000;
+  width: 1200px;
+  height: 331px;
+  background-color: #ffffff;
+  color: #333333;
 }
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item {
+  height: 331px;
+  width: 400px;
+  text-align: center;
+  padding-top: 61px;
+}
+
+.advantages-item h3 {
+  position: relative;
+  margin: 21px 0 0 -3px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.advantages-item p {
+  line-height: 21px;
+  margin: 24px 55px 0 50px;
+}
+
+.reason-item .reason-canyon {
+  width: 400px;
+  height: 256px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  line-height: 21px;
+}
+
+.reason-canyon-image {
+  width: 800px;
+  height: 256px;
+  background-image: url("../img/canyon.jpg");
+  background-position-y: -77px;
+  background-size: cover;
+}
+
+.reason-canyon h2 {
+  min-width: 20px;
+  min-height: 50px;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 45px 125px 0 125px;
+}
+
+.reason-canyon span {
+  font-weight: 400;
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+.reason-canyon p {
+  min-width: 280px;
+  min-height: 42px;
+  font-weight: 400;
+  margin: 21px 37px 64px 40px;
+}
+
+
+.threereason {
+  width: 1200px;
+  height: 256px;
+  /* Изменить цвет */
+  background-color: beige;
+  color: #333333;
+}
+
+.threereason-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  line-height: 21px;
+}
+
+.onereason-item {
+  height: 256px;
+  width: 400px;
+  text-align: center;
+  padding: 30px 50px 70px;
+}
+
+.onereason-item h2 {
+  min-width: 20px;
+  min-height: 50px;
+  font-size: 21px;
+  font-weight: 700;
+  /*margin: 46px 132px 0 127px;*/
+}
+
+.onereason-item span {
+  font-weight: 400;
+  display: block;
+  /*margin: 15px 155px 0 150px;*/
+}
+
+.onereason-item p {
+  min-width: 280px;
+  min-height: 42px;
+  font-weight: 400;
+  /*margin: 21px 200px 64px 70px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .booking input[type="submit"] {
   font: inherit;
