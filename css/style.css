@@ -297,7 +297,7 @@ a {
 }
 
 
-.threereason {
+.morereason {
   width: 1200px;
   height: 256px;
   /* Изменить цвет */
@@ -305,43 +305,87 @@ a {
   color: #333333;
 }
 
-.threereason-list {
+.reason-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
   line-height: 21px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
-.onereason-item {
-  height: 256px;
-  width: 400px;
-  text-align: center;
-  padding: 30px 50px 70px;
+.morereason-item {
+  height: 143px;
+  width: 208px;
+  padding: 45px 99px 68px 93px;
 }
 
-.onereason-item h2 {
+.morereason-item h2 {
   min-width: 20px;
   min-height: 50px;
   font-size: 21px;
   font-weight: 700;
-  /*margin: 46px 132px 0 127px;*/
+  line-height: 21px;
+  margin: 0 0 0 0;
 }
 
-.onereason-item span {
+.morereason-item span {
   font-weight: 400;
   display: block;
-  /*margin: 15px 155px 0 150px;*/
+  margin: 16px;
 }
 
-.onereason-item p {
-  min-width: 280px;
+.morereason-item p {
+  min-width: 208px;
   min-height: 42px;
   font-weight: 400;
-  /*margin: 21px 200px 64px 70px;*/
+  margin: 21px 0;
+}
+
+.check {
+  width: 1200px;
+  height: 290px;
+  /* Изменить цвет */
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.check h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+  margin: 49px 0 0 0;
+}
+
+.check p {
+  min-height: 40px;
+  line-height: 24px;
+  margin: 24px 370px 47px;
 }
 
 
+.check .button {
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  min-width: 568px;
+  min-height: 86px;
+  background-color: #766357;
+  display: block;
+}
 
+.check .button:hover {
+  background-color: #604e43;
+}
+
+.check .button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
 
 
 
@@ -390,28 +434,7 @@ a {
 /*  opacity: 0.9;*/
 /*}*/
 
-.check .button {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-size: 21px;
-  font-weight: 700;
-  width: 568px;
-  height: 86px;
-  background-color: #766357;
-  border: none;
-}
 
-.check .button:hover {
-  background-color: #604e43;
-}
-
-.check .button:focus {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #503e33;
-}
 
 .filter fieldset {
   border: none;
