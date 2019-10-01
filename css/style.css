@@ -25,7 +25,7 @@ html,
 body {
   min-width: 1200px;
   /* Временно для сетки */
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .inner-page {
@@ -76,27 +76,53 @@ a {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .site-navigation .logo {
   background-color: transparent;
-  width: 140px;
+  width: 138px;
   height: 72px;
-  margin: 0;
+  margin: -1px 0;
   padding: 0;
 }
 
 .site-navigation li {
+  line-height: 10px;
   width: 240px;
   height: 56px;
   background-color: #ffffff;
 }
 
-.site-navigation a {
-  /* Разобраться с позиционированием */
+.site-navigation .info {
+  display: block;
+  height: 10px;
   color: #000000;
   font-weight: 700;
+  padding: 22px 75px 24px 70px;
+}
+
+.site-navigation .photo {
+  display: block;
+  height: 10px;
+  color: #000000;
+  font-weight: 700;
+  padding: 22px 69px 24px 72px;
+}
+
+.site-navigation .statemap {
+  display: block;
+  height: 10px;
+  color: #000000;
+  font-weight: 700;
+  padding: 22px 70px 24px 75px;
+}
+
+.site-navigation .hotels {
+  display: block;
+  height: 10px;
+  color: #000000;
+  font-weight: 700;
+  padding: 22px 72px 24px 88px;
 }
 
 .site-navigation a:hover {
@@ -120,11 +146,8 @@ a {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .container-bottom {
@@ -146,43 +169,41 @@ a {
   /* Временно для сетки */
   width: 1200px;
   height: 59px;
-  margin: 0 -1px 0 -2px;
+  margin: 0 auto;
 }
 
-.intro {
-  min-width: 1200px;
-  min-height: 217px;
-  margin: -2px 0;
+.container .intro {
+  height: 99px;
+  padding: 60px 355px 58px;
+  margin: -2px auto 0 0;
   background-color: #ffffff;
-  text-align: justify-all;
+
 }
 
 .intro h1 {
-  /* Разобраться с позиционированием */
-  width: 445px;
   height: 48px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  margin: 60px 379px 20px;
+  text-align: justify-all;
+  margin: 0 auto;
 }
 
 .intro p {
-  /* Разобраться с позиционированием */
   width: 490px;
   height: 13px;
   color: #333333;
   font-weight: 400;
-  margin: 32px 340px 56px 352px;
+
+  margin: 32px auto;
 }
 
 .reason-item {
+  height: 256px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: justify-all;
-  width: 1200px;
-  margin: 1px 2px 0 0;
   list-style: none;
 }
 
@@ -207,7 +228,8 @@ a {
   min-height: 50px;
   font-size: 21px;
   font-weight: 700;
-  margin: 47px 105px 0 105px;
+  margin: 46px 105px 0 105px;
+  text-align: justify-all;
 }
 
 .reason-city span {
@@ -224,8 +246,7 @@ a {
 }
 
 .advantages {
-  width: 1200px;
-  height: 331px;
+  height: 330px;
   background-color: #ffffff;
   color: #333333;
 }
@@ -236,13 +257,31 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: justify-all;
 }
 
-.advantages-item {
-  height: 331px;
-  width: 400px;
+.advantages-list li:nth-child(1) {
+  height: 185px;
+  width: 260px;
   text-align: center;
-  padding-top: 61px;
+  align-items: center;
+  margin: 60px 70px 85px 70px;
+}
+
+.advantages-list li:nth-child(2) {
+  height: 182px;
+  width: 290px;
+  text-align: center;
+  align-items: center;
+  margin: 61px 55px 87px 55px;
+}
+
+.advantages-list li:nth-child(3) {
+  height: 188px;
+  width: 280px;
+  text-align: center;
+  align-items: center;
+  margin: 56px 60px 86px 60px;
 }
 
 .advantages-item h3 {
@@ -255,7 +294,7 @@ a {
 
 .advantages-item p {
   line-height: 21px;
-  margin: 24px 55px 0 50px;
+  margin: 24px auto;
 }
 
 .reason-item .reason-canyon {
@@ -285,7 +324,7 @@ a {
 .reason-canyon span {
   font-weight: 400;
   display: block;
-  margin: 15px 0 0 0;
+  margin: 16px 0 0 0;
 }
 
 .reason-canyon p {
@@ -300,7 +339,7 @@ a {
   width: 1200px;
   height: 256px;
   /* Изменить цвет */
-  background-color: beige;
+  background-color: #f2f2f2;
   color: #333333;
 }
 
@@ -315,31 +354,37 @@ a {
 
 .morereason-item {
   height: 143px;
-  width: 208px;
-  padding: 45px 99px 68px 93px;
+  width: 310px;
+  padding: 47px 50px 66px 50px;
+  /*border: 1px solid #000000;*/
 }
 
 .morereason-item h2 {
-  min-width: 20px;
-  min-height: 50px;
+  width: 120px;
   font-size: 21px;
   font-weight: 700;
-  line-height: 21px;
-  margin: 0 0 0 0;
+  margin: 0 auto;
 }
 
 .morereason-item span {
   font-weight: 400;
   display: block;
-  margin: 16px;
+  margin: 23px auto 0;
 }
 
 .morereason-item p {
-  min-width: 208px;
-  min-height: 42px;
+  min-width: 210px;
   font-weight: 400;
-  margin: 21px 0;
+  margin: 21px auto;
 }
+
+
+
+
+
+
+
+
 
 .check {
   width: 1200px;
@@ -391,20 +436,31 @@ a {
 }
 
 .page-footer {
-  height: 48px;
-  width: 967px;
-  margin-top: -128px;
-  margin-left: 243px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 1200px;
+  height: 120px;
+  margin: -128px auto 0;
   background-color: #ffffff;
   opacity: 0.9;
-  padding: 36px 101px 36px 132px;
+
 }
 
 .page-footer .container {
-  height: 48px;
+  /*height: 48px;*/
+  /*width: 967px;*/
+  /*margin: auto;*/
+  display: flex;
+  /*flex-wrap: wrap;*/
+  /*justify-content: space-between;*/
+}
+
+.hashtag {
+  width: 136px;
+  height: 16px;
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+
 
 }
 
@@ -412,10 +468,12 @@ a {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
-  width: 136px;
-  height: 16px;
+  min-width: 136px;
+  min-height: 16px;
   line-height: 26px;
-  padding-top: 40px;
+  display: block;
+  margin: 9px;
+  position: center;
 }
 
 .social-networks {
@@ -426,28 +484,10 @@ a {
   justify-content: center;
 }
 
-.developer {
-  width: 197px;
-  height: 41px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*.developer {*/
+/*  width: 197px;*/
+/*  height: 41px;*/
+/*}*/
 
 
 .booking input[type="submit"] {
