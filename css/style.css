@@ -24,7 +24,6 @@ body {
 html,
 body {
   min-width: 1200px;
-  min-height: 2762px;
   /* Временно для сетки */
   opacity: 0.8;
 }
@@ -364,18 +363,17 @@ a {
   margin: 24px 370px 47px;
 }
 
-
-.check .button {
-  text-align: center;
-  color: #ffffff;
+.button {
+  display: inline-block;
+  min-width: 289px;
+  min-height: 18px;
+  padding: 30px 138px 30px 138px;
   vertical-align: middle;
+  color: #ffffff;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  min-width: 568px;
-  min-height: 86px;
   background-color: #766357;
-  display: block;
 }
 
 .check .button:hover {
@@ -386,6 +384,60 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+
+.map {
+
+
+}
+
+.page-footer {
+  height: 48px;
+  width: 967px;
+  margin-top: -128px;
+  margin-left: 243px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  opacity: 0.9;
+  padding: 36px 101px 36px 132px;
+}
+
+.page-footer .container {
+  height: 48px;
+
+}
+
+.hashtag a {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  width: 136px;
+  height: 16px;
+  line-height: 26px;
+  padding-top: 40px;
+}
+
+.social-networks {
+  width: 150px;
+  height: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.developer {
+  width: 197px;
+  height: 41px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -420,20 +472,6 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
-
-.hashtag a {
-  color: #000000;
-  font-size: 21px;
-  font-weight: 700;
-}
-
-/*.page-footer {*/
-/*  width: 1200px;*/
-/*  height: 120px;*/
-/*  background-color: #ffffff;*/
-/*  opacity: 0.9;*/
-/*}*/
-
 
 
 .filter fieldset {
