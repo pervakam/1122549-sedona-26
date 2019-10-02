@@ -23,6 +23,10 @@ body {
 /*  background-repeat: no-repeat;*/
 /*}*/
 
+html,
+body {
+  opacity: 0.8;
+}
 
 .inner-page {
   color: #000000;
@@ -31,6 +35,14 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+
+/* Временно для сетки */
+/*.temporary {*/
+/*  background-image: url("../img/sedona-hotels.jpg");*/
+/*  background-position: top center;*/
+/*  background-repeat: no-repeat;*/
+/*}*/
 
 a {
   text-decoration: none;
@@ -50,12 +62,10 @@ a {
 .main-menu {
   width: 100%;
   margin-bottom: 76px;
-  min-height: 56px;
 }
 
 .site-navigation {
   min-width: 1200px;
-  min-height: 56px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -79,7 +89,6 @@ a {
 
 .site-navigation .info {
   display: block;
-  height: 10px;
   color: #000000;
   font-weight: 700;
   padding: 22px 75px 24px 70px;
@@ -87,7 +96,6 @@ a {
 
 .site-navigation .photo {
   display: block;
-  height: 10px;
   color: #000000;
   font-weight: 700;
   padding: 22px 69px 24px 72px;
@@ -95,7 +103,6 @@ a {
 
 .site-navigation .statemap {
   display: block;
-  height: 10px;
   color: #000000;
   font-weight: 700;
   padding: 22px 70px 24px 75px;
@@ -103,7 +110,6 @@ a {
 
 .site-navigation .hotels {
   display: block;
-  height: 10px;
   color: #000000;
   font-weight: 700;
   padding: 22px 72px 24px 88px;
@@ -154,28 +160,26 @@ a {
 }
 
 .container .intro {
+  /* как быть с высотой? */
   height: 99px;
   padding: 60px 355px 58px;
-  margin: -2px auto 0 0;
+  margin: -2px 0 0 0;
   background-color: #ffffff;
 }
 
 .intro h1 {
-  height: 48px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: justify-all;
-  margin: 0 auto;
+  margin: 0 0 0 0;
 }
 
 .intro p {
   width: 490px;
-  height: 13px;
   color: #333333;
   font-weight: 400;
-
-  margin: 32px auto;
+  margin: 29px auto;
 }
 
 .reason-item {
@@ -314,11 +318,9 @@ a {
   margin: 21px 37px 64px 40px;
 }
 
-
 .morereason {
   width: 1200px;
   height: 256px;
-  /* Изменить цвет */
   background-color: #f2f2f2;
   color: #333333;
 }
@@ -413,8 +415,15 @@ a {
   opacity: 0.9;
 }
 
+.inner-page .page-footer {
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
 .page-footer .container {
-  height: 48px;
   width: 967px;
   display: flex;
   padding: 36px 101px 36px 132px;
@@ -425,7 +434,6 @@ a {
 .hashtag a {
   display: block;
   width: 150px;
-  height: 24px;
   color: #000000;
   font-size: 21px;
   font-weight: 700;
@@ -494,42 +502,16 @@ a {
   fill: #bdbbbc;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.booking input[type="submit"] {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-size: 21px;
-  font-weight: 700;
-  width: 458px;
-  height: 58px;
-  background-color: #81b3d2;
-  border: none;
+.filters {
+  width: 1200px;
+  height: 217px;
+  margin: -76px 0 0 0;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*flex-wrap: wrap;*/
 }
 
-.booking input[type="submit"]:hover {
-  background-color: #669ec0;
-}
 
-.booking input[type="submit"]:focus {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5496bd;
-}
 
 
 .filter fieldset {
