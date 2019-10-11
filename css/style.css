@@ -34,19 +34,22 @@ body {
   background-image: url("../img/filter-background.jpg");
   background-position: top -230px center;
   background-repeat: no-repeat;
-
 }
 
 
-/* Временно для сетки */
+/*Временно для сетки*/
 /*.temporary {*/
 /*  background-image: url("../img/sedona-hotels.jpg");*/
 /*  background-size: auto;*/
 /*  background-position: top center;*/
 /*  background-repeat: no-repeat;*/
-/*  !*opacity: 0.8;*!*/
 /*  min-width: 1200px;*/
 /*  min-height: 933px;*/
+/*}*/
+
+/*main {*/
+/*  opacity: 0.8;*/
+
 /*}*/
 
 a {
@@ -688,7 +691,7 @@ a {
 }
 
 .sort,
-.sort-rang{
+.sort-rang {
   list-style: none;
   display: flex;
 
@@ -721,14 +724,14 @@ a {
 .result-list {
   margin: 0 0;
   padding: 0 0;
+
 }
 
 .result-item {
   min-height: 150px;
   padding: 0 72px;
   display: flex;
-  /*flex-direction: column;*/
-  justify-content: space-between;
+  justify-content: left;
   flex-wrap: wrap;
   align-items: center;
   border-bottom: 1px solid #f2f2f2;
@@ -739,69 +742,100 @@ a {
   flex-wrap: wrap;
 }
 
+.result-item img {
+  margin-top: 7px;
+}
 
+.about {
+  min-width: 700px;
+  min-height: 100px;
+  text-align: left;
+  margin-left: 30px;
+}
 
+.about h3 {
+  margin: 0 0 4px 0;
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+}
 
+.about p {
+  margin: 0 0 13px 0;
+}
+.about span {
+  margin-right: 34px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/*.more {*/
-/*  font-weight: 700;*/
-/*  background-color: #81b3d2;*/
-/*  width: 110px;*/
-/*  height: 27px;*/
-/*  color: #ffffff;*/
-/*}*/
-
-/*.more:hover {*/
-/*  background-color: #669ec0;*/
-/*}*/
-
-/*.more:focus {*/
-/*  color: rgba(255, 255, 255, 0.3);*/
-/*  background-color: #5496bd;*/
-/*}*/
-
-/*.book {*/
-/*  font-weight: 700;*/
-/*  background-color: #766357;*/
-/*  width: 142px;*/
-/*  height: 27px;*/
-/*  color: #ffffff;*/
-/*}*/
-
-/*.book:hover {*/
-/*  background-color: #604e43;*/
-/*}*/
-
-/*.book:focus {*/
-/*  color: rgba(255, 255, 255, 0.3);*/
-/*  background-color: #503e33;*/
-/*}*/
-
-/*.result-item {*/
-/*  background-color: #ffffff;*/
-/*}*/
-
-/*.result-item a {*/
-/*  color: #ffffff;*/
+/*.about .more {*/
+/*  !*color: #ffffff;*!*/
+/*  font-size: 14px;*/
 /*  font-weight: 700;*/
 /*}*/
 
-/*.rating {*/
-/*  width: 110px;*/
-/*  height: 27px;*/
-/*  background-color: #f2f2f2;*/
-/*  color: #666666;*/
+/*.about .book {*/
+/*  !*color: #ffffff;*!*/
+/*  font-size: 14px;*/
+/*  font-weight: 700;*/
 /*}*/
+
+
+.more {
+  display: inline-block;
+  font-weight: 700;
+  background-color: #81b3d2;
+  width: 110px;
+  height: 27px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.more:hover {
+  background-color: #669ec0;
+}
+
+.more:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.book {
+  display: inline-block;
+  font-weight: 700;
+  background-color: #766357;
+  width: 142px;
+  height: 27px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.book:hover {
+  background-color: #604e43;
+}
+
+.book:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.rating {
+  min-height: 100px;
+  min-width: 190px;
+  text-align: right;
+
+}
+
+.rating p{
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  color: #666666;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
 
 
