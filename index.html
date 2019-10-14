@@ -114,18 +114,28 @@
     <p>Укажите предполагаемые даты поедки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <a class="button" href="#">Поиск гостиницы в Седоне</a>
   </section>
-  <section class="booking">
-    <!--    <form action="https://echo.htmlacademy.ru" method="post">-->
-    <!--      <label for="check-in-field">Дата заезда:</label>-->
-    <!--      <input type="date" name="check-in" id="check-in-field">-->
-    <!--      <label for="check-out-field">Дата выезда:</label>-->
-    <!--      <input type="date" name="check-out" id="check-out-field">-->
-    <!--      <label for="adults-field">Взрослые:</label>-->
-    <!--      <input type="number" name="adults" id="adults-field">-->
-    <!--      <label for="childrens-field">Дети:</label>-->
-    <!--      <input type="number" name="childrens" id="childrens-field">-->
-    <!--      <input type="submit" value="Найти">-->
-    <!--    </form>-->
+  <section class="modal booking">
+    <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="booking-item">
+        <label for="check-in-field">Дата заезда:</label>
+        <input type="text" name="check-in" id="check-in-field" value="" placeholder="24 апреля 2017">
+      </p>
+      <p class="booking-item">
+        <label for="check-out-field">Дата выезда:</label>
+        <input type="text" name="check-out" id="check-out-field" value="" placeholder="4 июля 2017">
+      </p>
+      <p class="booking-item-last">
+        <span>
+        <label for="adults-field">Взрослые:</label>
+        <input type="number" name="adults" id="adults-field">
+        </span>
+        <span>
+        <label for="childrens-field">Дети:</label>
+        <input type="number" name="childrens" id="childrens-field">
+        </span>
+      </p>
+      <input type="submit" value="Найти">
+    </form>
   </section>
   <section class="map">
     <img src="img/map.png" width="1200" height="594" alt="102_Roadrunner_Drive,Sedona,AZ,86336">
@@ -182,5 +192,9 @@
     </div>
   </div>
 </footer>
+
+
+
+
 </body>
 </html>

@@ -16,16 +16,16 @@ body {
 
 /* Временно для сетки */
 
-/*body {*/
-/*  !* Временно для сетки *!*/
-/*    background-image: url("../img/sedona-hotels.jpg");*/
-/*  background-position: top center;*/
-/*  background-repeat: no-repeat;*/
-/*}*/
+body {
+  /* Временно для сетки */
+  background-image: url("../img/sedona-index.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
 html,
 body {
-
+  opacity: 0.8;
 }
 
 .inner-page {
@@ -73,7 +73,7 @@ a {
 }
 
 .site-navigation {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -882,4 +882,92 @@ a {
   vertical-align: middle;
 }
 
+.modal {
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
 
+.booking {
+  width: 458px;
+  top: 2168px;
+  left: 50%;
+  margin-left: -284px;
+  padding: 55px 55px;
+  /*временно*/
+  height: 285px;
+  text-align: left;
+}
+
+.booking-item,
+.booking-item-last {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-weight: 700;
+
+}
+
+.booking-item label {
+  display: block;
+  width: 111px;
+  padding-top: 7px;
+  padding-left: 1px;
+}
+
+.booking-item input {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.booking-item input[type="text"] {
+  box-sizing: border-box;
+  width: 346px;
+  height: 38px;
+  padding: 10px 12px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom: 29px;
+}
+
+.booking-item input:hover {
+  border-color: #ebebeb;
+}
+
+.booking-item input:focus {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.booking-item-last {
+  margin-top: 1px;
+}
+
+.booking-item-last label {
+  display: block;
+  width: 38px;
+  padding-top: 7px;
+  padding-left: 1px;
+}
+
+.booking-item-last input[type="number"] {
+  box-sizing: border-box;
+  width: 114px;
+  height: 38px;
+  /*padding: 10px 12px;*/
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom: 29px;
+  margin-left: 50px;
+}
+
+.booking-item-last input:hover {
+  border-color: #ebebeb;
+}
+
+.booking-item-last input:focus {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
