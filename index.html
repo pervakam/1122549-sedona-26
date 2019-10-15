@@ -27,7 +27,7 @@
     </div>
   </div>
 </header>
-<main class="container">
+<main class="page-main container">
   <section class="intro">
     <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -110,7 +110,7 @@
   <section class="check">
     <h2>Заинтересовались?</h2>
     <p>Укажите предполагаемые даты поедки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <a class="button" href="#">Поиск гостиницы в Седоне</a>
+    <a class="check-button modal-close" href="#">Поиск гостиницы в Седоне</a>
   </section>
   <section class="modal booking">
     <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
@@ -140,7 +140,7 @@
         <button class="adults-less" type="button">
           <span class="visually-hidden">Меньше</span>
         </button>
-        <input type="text" name="adults" id="adults-field"  value="" placeholder="2">
+        <input type="text" name="adults" id="adults-field" value="" placeholder="2">
         <button class="adults-more" type="button">
           <span class="visually-hidden">Больше</span>
         </button>
@@ -150,7 +150,7 @@
         <button class="childrens-less" type="button">
           <span class="visually-hidden">Меньше</span>
         </button>
-        <input type="text" name="childrens" id="childrens-field"  value="" placeholder="0">
+        <input type="text" name="childrens" id="childrens-field" value="" placeholder="0">
         <button class="childrens-more" type="button">
           <span class="visually-hidden">Больше</span>
         </button>
@@ -214,6 +214,38 @@
     </div>
   </div>
 </footer>
+
+<script>
+    var link = document.querySelector(".check-button");
+
+    var popup = document.querySelector(".modal");
+
+    var close = popup.querySelector(".modal-close");
+
+    var checkin = popup.querySelector("[name=check-in-field]");
+
+    var form = popup.querySelector("form");
+
+    link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        checkin.focus();
+    });
+
+    close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+    });
+
+    window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+            evt.preventDefault();
+            if (popup.classList.contains("modal-show")) {
+                popup.classList.remove("modal-show");
+            }
+        }
+    });
+</script>
 
 
 </body>

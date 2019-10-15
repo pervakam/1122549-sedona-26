@@ -22,6 +22,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.page-header,
+.page-main,
+.page-footer {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px rgba(0, 1, 1, 0.15);
+}
+
+
 
 a {
   text-decoration: none;
@@ -107,6 +116,10 @@ a {
   color: #766357;
 }
 
+.hotels-page .hotels {
+  color: #766357;
+}
+
 .site-navigation,
 .advantages,
 .social-networks li,
@@ -135,12 +148,6 @@ a {
   width: 459px;
   height: 353px;
   margin-bottom: 79px;
-}
-
-.polygon {
-  width: 1200px;
-  height: 59px;
-  margin: 0 auto;
 }
 
 .container .intro {
@@ -364,7 +371,7 @@ a {
   margin: 24px 370px 46px;
 }
 
-.button {
+.check-button {
   display: inline-block;
   min-width: 289px;
   min-height: 18px;
@@ -377,11 +384,11 @@ a {
   background-color: #766357;
 }
 
-.check .button:hover {
+.check .check-button:hover {
   background-color: #604e43;
 }
 
-.check .button:focus {
+.check .check-button:focus {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
@@ -452,11 +459,11 @@ a {
   background-color: #669ec0;
 }
 
-.social-button:focus path {
+.social-button:active path {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.social-button:focus {
+.social-button:active {
   background-color: #5496bd;
 }
 
@@ -484,7 +491,7 @@ a {
   fill: #81b3d2;
 }
 
-.developer-logo:focus path {
+.developer-logo:active path {
   fill: #bdbbbc;
 }
 
@@ -724,7 +731,7 @@ a {
 .sort-type a {
   color: #000000;
   opacity: 0.3;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-type a:hover {
@@ -740,6 +747,12 @@ a {
 
 .sort-type a:active {
   color: #000000;
+  border: none;
+  opacity: 1;
+}
+
+.sort-type .sort-price {
+  color: #81b3d2;
   border: none;
   opacity: 1;
 }
@@ -761,6 +774,10 @@ a {
 }
 
 .sort-rang a:active path {
+  fill: #81b3d2;
+}
+
+.sort-rang .sort-down path {
   fill: #81b3d2;
 }
 
@@ -800,7 +817,8 @@ a {
   text-align: left;
 }
 
-.about h3 {
+.name {
+  display: block;
   padding: 0 1px;
   text-align: left;
   color: #000000;
@@ -810,11 +828,12 @@ a {
   margin: 0 0;
 }
 
-.about h3:hover {
+.name:hover {
   color: #81b3d2;
 }
 
-.about h3:active {
+.name:focus {
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -834,7 +853,7 @@ a {
   background-color: #669ec0;
 }
 
-.more:focus {
+.more:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
@@ -854,7 +873,7 @@ a {
   background-color: #604e43;
 }
 
-.book:focus {
+.book:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
@@ -887,10 +906,33 @@ a {
   vertical-align: middle;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal {
   position: absolute;
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .booking {
