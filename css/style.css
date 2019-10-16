@@ -30,8 +30,6 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 1, 1, 0.15);
 }
 
-
-
 a {
   text-decoration: none;
 }
@@ -368,7 +366,7 @@ a {
 .check p {
   min-height: 40px;
   line-height: 24px;
-  margin: 24px 370px 46px;
+  margin: 24px 371px 47px;
 }
 
 .check-button {
@@ -388,13 +386,26 @@ a {
   background-color: #604e43;
 }
 
-.check .check-button:focus {
+.check .check-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
-.map {
 
+.map iframe {
+  /*position: relative;*/
+  /*z-index: 2;*/
+
+  border: none;
+}
+
+.map img {
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*z-index: 1;*/
+
+  margin: 0 auto;
 }
 
 .page-footer {
@@ -403,6 +414,7 @@ a {
   margin: -128px auto;
   background-color: #ffffff;
   opacity: 0.9;
+  z-index: 3;
 }
 
 .inner-page .page-footer {
@@ -926,18 +938,19 @@ a {
 
 .modal {
   position: absolute;
+  display: none;
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce 1s;
 }
 
 .booking {
   width: 458px;
-  top: 2168px;
+  top: 2166px;
   left: 50%;
   margin-left: -284px;
   padding: 55px 55px;

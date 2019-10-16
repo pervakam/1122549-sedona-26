@@ -110,7 +110,7 @@
   <section class="check">
     <h2>Заинтересовались?</h2>
     <p>Укажите предполагаемые даты поедки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <a class="check-button modal-close" href="#">Поиск гостиницы в Седоне</a>
+    <a class="check-button" href="#">Поиск гостиницы в Седоне</a>
   </section>
   <section class="modal booking">
     <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
@@ -156,11 +156,14 @@
         </button>
         </span>
       </p>
-      <input type="button" value="Найти">
+      <input class="modal-close" type="button" value="Найти">
     </form>
   </section>
   <section class="map">
-    <img src="img/map.png" width="1200" height="594" alt="102_Roadrunner_Drive,Sedona,AZ,86336">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.7397413990648!2d-111.81593638476329!3d34.86276628039321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da0d9480cd3a1%3A0x2171a36f1119766b!2zMTAyIFJvYWRydW5uZXIgRHIsIFNlZG9uYSwgQVogODYzMzYsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1571258392650!5m2!1sru!2sru"
+      width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <img class="visually-hidden" src="img/map.png" width="1200" height="594" alt="102_Roadrunner_Drive,Sedona,AZ,86336">
   </section>
 </main>
 <footer class="page-footer">
@@ -218,13 +221,11 @@
 <script>
     var link = document.querySelector(".check-button");
 
-    var popup = document.querySelector(".modal");
+    var popup = document.querySelector(".booking");
 
     var close = popup.querySelector(".modal-close");
 
-    var checkin = popup.querySelector("[name=check-in-field]");
-
-    var form = popup.querySelector("form");
+    var checkin = popup.querySelector("[name=check-in]");
 
     link.addEventListener("click", function (evt) {
         evt.preventDefault();
@@ -237,14 +238,8 @@
         popup.classList.remove("modal-show");
     });
 
-    window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-            evt.preventDefault();
-            if (popup.classList.contains("modal-show")) {
-                popup.classList.remove("modal-show");
-            }
-        }
-    });
+    var mapPopup = document.querySelector(".map");
+
 </script>
 
 
