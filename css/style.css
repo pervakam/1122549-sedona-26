@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -23,11 +23,12 @@ body {
 }
 
 .page-header,
-.page-main,
-.page-footer {
+.page-main {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 5px 5px 5px rgba(0, 1, 1, 0.15);
+  box-shadow:
+     7px 0 3px -3px rgba(0, 1, 1, 0.15),
+    -7px 0 3px -3px rgba(0, 1, 1, 0.15);
 }
 
 a {
@@ -131,7 +132,7 @@ a {
   margin: 0 auto;
 }
 
-.container-bottom {
+.welcome {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,7 +143,7 @@ a {
 
 }
 
-.welcome {
+.welcome img {
   width: 459px;
   height: 353px;
   margin-bottom: 79px;
@@ -151,8 +152,9 @@ a {
 .container .intro {
   height: 99px;
   padding: 60px 355px 58px;
-  margin: -2px 0 0 0;
+  margin: -1px 0 0 0;
   background-color: #ffffff;
+  box-shadow: none;
 }
 
 .intro h1 {
@@ -411,7 +413,7 @@ a {
 .page-footer {
   width: 1200px;
   height: 120px;
-  margin: -128px auto;
+  margin: -127px auto;
   background-color: #ffffff;
   opacity: 0.9;
   z-index: 3;
@@ -473,9 +475,6 @@ a {
 
 .social-button:active path {
   fill: rgba(255, 255, 255, 0.3);
-}
-
-.social-button:active {
   background-color: #5496bd;
 }
 
@@ -844,7 +843,7 @@ a {
   color: #81b3d2;
 }
 
-.name:focus {
+.name:active {
   color: #000000;
   opacity: 0.3;
 }
@@ -938,14 +937,15 @@ a {
 
 .modal {
   position: absolute;
-  display: none;
+  /*display: none;*/
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .modal-show {
-  display: block;
-  animation: bounce 1s;
+  /*display: block;*/
+  /*animation: bounce 1s;*/
+
 }
 
 .booking {
@@ -1009,11 +1009,11 @@ a {
 }
 
 .adults-field label {
-  margin-right: 41px;
+  margin-right: 38px;
 }
 
 .childrens-field label {
-  margin-right: 27px;
+  margin-right: 24px;
 }
 
 .childrens-field {

@@ -21,10 +21,8 @@
       </ul>
     </nav>
   </div>
-  <div class="container-bottom">
-    <div class="welcome">
-      <img src="img/welcome.png" width="459" height="353" alt="Приветствие Седона">
-    </div>
+  <div class="welcome">
+    <img src="img/welcome.png" width="459" height="353" alt="Приветствие Седона">
   </div>
 </header>
 <main class="page-main container">
@@ -156,7 +154,7 @@
         </button>
         </span>
       </p>
-      <input class="modal-close" type="button" value="Найти">
+      <input type="button" value="Найти">
     </form>
   </section>
   <section class="map">
@@ -219,25 +217,25 @@
 </footer>
 
 <script>
-    var link = document.querySelector(".check-button");
+    // var link = document.querySelector(".check-button");
+    //
+    // var popup = document.querySelector(".booking");
+    //
+    // var close = popup.querySelector(".check-button");
+    //
+    // var checkin = popup.querySelector("[name=check-in]");
 
-    var popup = document.querySelector(".booking");
-
-    var close = popup.querySelector(".modal-close");
-
-    var checkin = popup.querySelector("[name=check-in]");
-
-    link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        checkin.focus();
-    });
-
-    close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-    });
-
+    // link.addEventListener("click", function (evt) {
+    //     evt.preventDefault();
+    //     // popup.classList.add("modal-show");
+    //     checkin.focus();
+    // });
+    //
+    // close.addEventListener("click", function (evt) {
+    //     evt.preventDefault();
+    //     popup.classList.remove("modal-show");
+    // });
+    //
     var mapPopup = document.querySelector(".map");
 
 </script>
