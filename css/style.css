@@ -106,7 +106,7 @@ a {
   color: #766357;
 }
 
-.hotels-page .hotels {
+.inner-page .hotels {
   color: #766357;
 }
 
@@ -570,29 +570,13 @@ a {
 }
 
 .filter-option input[type="checkbox"] + label:active:before {
-  background: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
 }
 
 .filter-option input[type="checkbox"]:checked + label:active:before {
-  background: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat ;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*.filter-option input:active {*/
-/*  background-image: url("../img/checkbox-on.svg");*/
-/*  background-position: 1px 11px;*/
-/*  background-repeat: no-repeat;*/
-
-/*}*/
 
 .filter-range {
   width: 320px;
@@ -962,12 +946,16 @@ a {
 }
 
 .modal-show {
-  /*display: block;*/
-  /*animation: bounce 1s;*/
+  display: block;
+  animation: bounce 2s;
+}
 
+.modal-close {
+  d
 }
 
 .booking {
+  display: block;
   width: 458px;
   top: 2166px;
   left: 50%;

@@ -109,6 +109,7 @@
     <h2>Заинтересовались?</h2>
     <p>Укажите предполагаемые даты поедки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <a class="check-button" href="#">Поиск гостиницы в Седоне</a>
+
   </section>
   <section class="modal booking">
     <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
@@ -217,26 +218,48 @@
 </footer>
 
 <script>
-    // var link = document.querySelector(".check-button");
-    //
-    // var popup = document.querySelector(".booking");
-    //
-    // var close = popup.querySelector(".check-button");
-    //
-    // var checkin = popup.querySelector("[name=check-in]");
+    var link = document.querySelector(".check-button");
 
-    // link.addEventListener("click", function (evt) {
-    //     evt.preventDefault();
-    //     // popup.classList.add("modal-show");
-    //     checkin.focus();
-    // });
+    var popup = document.querySelector(".booking");
+
+    // var close = popup.querySelector(".modal-close");
+
+    var chekin = popup.querySelector("[name=check-in]");
+
+    link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        if (popup.querySelector(display="block")) {
+            popup.classList.remove("modal-show");}
+        login.focus();
+    });
+
+        // if (popup.classList.contains()) {
+        //     popup.classList.remove("modal-show");
+        // }
+
+
     //
     // close.addEventListener("click", function (evt) {
     //     evt.preventDefault();
+        // if (popup.classList.contains("modal-show")) {
+        //     popup.classList.remove("modal-show");
+        // }
+
     //     popup.classList.remove("modal-show");
     // });
     //
-    var mapPopup = document.querySelector(".map");
+    //
+    // window.addEventListener("keydown", function (evt) {
+    //     if (evt.keyCode === 27) {
+    //         evt.preventDefault();
+    //         if (popup.classList.contains("modal-show")) {
+    //             popup.classList.remove("modal-show");
+    //         }
+    //     }
+    // });
+
+
+        var mapPopup = document.querySelector(".map");
 
 </script>
 
