@@ -14,7 +14,6 @@ body {
   background-repeat: no-repeat;
 }
 
-
 .inner-page {
   color: #000000;
   background-color: #f2f2f2;
@@ -23,12 +22,16 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-header,
-.container {
+/*.container {*/
+/*  width: 1200px;*/
+/*  margin: 0 auto;*/
+/*}*/
+
+.cover {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 1, 0.2);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 1, 0.2);
   width: 1200px;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 10px 35px -35px rgba(0, 0, 0, 1);
-  box-shadow: 0px 10px 35px -35px rgba(0, 0, 0, 1);
 }
 
 a {
@@ -90,13 +93,13 @@ a {
 
 .site-navigation .site-navigation-left {
   width: 167px;
-  padding: 22px 0 22px 72px;
+  padding: 21px 0 23px 72px;
   text-align: left;
 }
 
 .site-navigation .site-navigation-right {
   width: 166px;
-  padding: 22px 73px 22px 0;
+  padding: 21px 73px 23px 0;
   text-align: right;
 }
 
@@ -149,7 +152,7 @@ a {
   margin-bottom: 79px;
 }
 
-.container .intro {
+.intro {
   min-height: 99px;
   padding: 60px 0 58px;
   margin: -4px 0 0 0;
@@ -224,7 +227,7 @@ a {
   min-width: 280px;
   min-height: 42px;
   font-weight: 400;
-  margin: 22px 55px 64px;
+  margin: 22px 55px 60px;
 }
 
 .advantages {
@@ -322,7 +325,7 @@ a {
   min-width: 280px;
   min-height: 42px;
   font-weight: 400;
-  margin: 21px 37px 64px 40px;
+  margin: 21px 37px 60px 40px;
 }
 
 .morereason {
@@ -354,7 +357,7 @@ a {
 }
 
 .morereason-item h2 {
-  width: 120px;
+  width: 140px;
   font-size: 21px;
   font-weight: 700;
   margin: 0 auto;
@@ -393,7 +396,7 @@ a {
 .check p {
   min-height: 40px;
   line-height: 24px;
-  margin: 24px 0 47px 0;
+  margin: 24px 0 48px;
 }
 
 .check-button {
@@ -435,7 +438,7 @@ a {
 .page-footer {
   width: 1200px;
   height: 120px;
-  margin: -127px auto;
+  margin: -120px auto;
   background-color: #ffffff;
   opacity: 0.9;
   z-index: 3;
@@ -446,7 +449,7 @@ a {
   height: 120px;
   margin: 0 auto;
   background-color: #ffffff;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .page-footer .container {
@@ -530,8 +533,8 @@ a {
 }
 
 .developer p {
-  display: block;
-  width: 74px;
+  /*display: block;*/
+  width: 75px;
   margin: 10px 0 0 3px;
 }
 
@@ -541,11 +544,11 @@ a {
   margin: 4px 0;
 }
 
-.developer-logo:hover path {
+.developer-logo svg:hover path {
   fill: #81b3d2;
 }
 
-.developer-logo:active path {
+.developer-logo svg:active path {
   fill: #bdbbbc;
 }
 
@@ -773,8 +776,6 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -789,7 +790,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  vertical-align: middle;
   text-decoration: none;
 }
 
@@ -876,8 +876,8 @@ a {
 }
 
 .result-item {
-  min-height: 150px;
-  padding: 0 72px;
+  min-height: 126px;
+  padding: 24px 72px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,9 +886,9 @@ a {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  /*-webkit-box-align: center;*/
+  /*-ms-flex-align: center;*/
+  /*align-items: center;*/
   border-bottom: 1px solid #f2f2f2;
   background-color: #ffffff;
 }
@@ -902,7 +902,7 @@ a {
 }
 
 .description img {
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
 .about {
@@ -1024,7 +1024,7 @@ a {
 
 .booking {
   width: 458px;
-  top: 2178px;
+  top: 2174px;
   left: 50%;
   margin-left: -284px;
   padding: 55px 55px;
@@ -1170,11 +1170,11 @@ a {
 }
 
 .adults-field label {
-  margin-right: 38px;
+  width: 112px;
 }
 
 .childrens-field label {
-  margin-right: 24px;
+  width: 65px;
 }
 
 .childrens-field {
@@ -1297,7 +1297,7 @@ a {
 .adults-more::before {
   content: "";
   position: absolute;
-  left: 252px;
+  left: 256px;
   width: 11px;
   height: 3px;
   background-color: #cacaca;
@@ -1312,7 +1312,7 @@ a {
 .childrens-more::before {
   content: "";
   position: absolute;
-  left: 485px;
+  left: 487px;
   width: 11px;
   height: 3px;
   background-color: #cacaca;
@@ -1333,7 +1333,7 @@ a {
 .adults-less::after {
   content: "";
   position: absolute;
-  left: 176px;
+  left: 180px;
   width: 12px;
   height: 3px;
   background-color: #cacaca;
@@ -1342,7 +1342,7 @@ a {
 .childrens-less::after {
   content: "";
   position: absolute;
-  left: 409px;
+  left: 412px;
   width: 12px;
   height: 3px;
   background-color: #cacaca;
