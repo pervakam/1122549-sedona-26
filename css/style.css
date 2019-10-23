@@ -14,6 +14,7 @@ body {
   background-repeat: no-repeat;
 }
 
+
 .inner-page {
   color: #000000;
   background-color: #f2f2f2;
@@ -150,23 +151,25 @@ a {
 
 .container .intro {
   min-height: 99px;
-  padding: 60px 355px 58px;
+  padding: 60px 0 58px;
   margin: -4px 0 0 0;
   background-color: #ffffff;
   box-shadow: none;
 }
 
 .intro h1 {
+  width: 600px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  text-align: justify-all;
-  margin: 0 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
   padding: 0 0;
 }
 
 .intro p {
-  width: 490px;
   color: #333333;
   font-weight: 400;
   margin: 29px auto 0;
@@ -244,32 +247,32 @@ a {
 
 .advantages-list li:nth-child(1) {
   min-height: 185px;
-  width: 260px;
+  width: 300px;
   text-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 60px 70px 85px 70px;
+  margin: 60px 50px 85px 50px;
 }
 
 .advantages-list li:nth-child(2) {
   min-height: 182px;
-  width: 290px;
+  width: 300px;
   text-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 61px 55px 87px 55px;
+  margin: 61px 50px 87px 50px;
 }
 
 .advantages-list li:nth-child(3) {
   min-height: 188px;
-  width: 280px;
+  width: 300px;
   text-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 56px 60px 86px 60px;
+  margin: 56px 50px 86px 50px;
 }
 
 .advantages-item h3 {
@@ -306,7 +309,7 @@ a {
   min-height: 50px;
   font-size: 21px;
   font-weight: 700;
-  margin: 45px 125px 0 125px;
+  margin: 45px 0 0 0;
 }
 
 .reason-canyon span {
@@ -390,15 +393,15 @@ a {
 .check p {
   min-height: 40px;
   line-height: 24px;
-  margin: 24px 371px 47px;
+  margin: 24px 0 47px 0;
 }
 
 .check-button {
   display: inline-block;
-  min-width: 289px;
+  width: 568px;
   min-height: 18px;
-  padding: 30px 138px 30px 138px;
-  vertical-align: middle;
+  padding: 30px 0;
+  margin: 0 auto;
   color: #ffffff;
   font-size: 21px;
   font-weight: 700;
@@ -546,32 +549,26 @@ a {
   fill: #bdbbbc;
 }
 
+
 .filters {
+  position: relative;
   width: 1200px;
-  min-height: 217px;
+  height: 217px;
   margin: -76px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: left;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .filter {
-  width: 184px;
-  padding: 24px 0 0 71px;
-  margin: 0;
-  border: none;
-}
-
-.filter ul {
-  text-align: left;
+  padding: 24px 74px 5px 72px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .filter fieldset {
-  margin: 0;
-  padding: 0;
+  width: 200px;
+  margin: 0 60px 0 0;
+  padding: 0 0;
   border: none;
 }
 
@@ -592,7 +589,6 @@ a {
 }
 
 .filter-option {
-  padding-left: 23px;
   cursor: pointer;
 }
 
@@ -612,7 +608,7 @@ a {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   vertical-align: middle;
-  margin-right: 19px;
+  margin-right: 14px;
   margin-bottom: 4px;
 }
 
@@ -621,7 +617,7 @@ a {
 }
 
 .filter-option input[type="checkbox"]:checked:disabled + label:before {
-  background:  #6a6a6a url("../img/checkbox-on.svg");
+  background: #6a6a6a url("../img/checkbox-on.svg");
 }
 
 .filter-option input[type="checkbox"]:disabled + label:before {
@@ -637,16 +633,17 @@ a {
   background-repeat: no-repeat;
 }
 
-.filter-range {
-  width: 320px;
-  margin: 28px 0 28px 300px;
+.filter .filter-range {
+  width: 330px;
+  margin: 3px 0 28px 230px;
+
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
   text-align: left;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -669,15 +666,18 @@ a {
   width: 2px;
   height: 22px;
   background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
+
   font-size: 14px;
-  line-height: 30px;
+  line-height: 32px;
   vertical-align: top;
-  text-align: left;
+
   cursor: pointer;
 }
 
@@ -685,43 +685,49 @@ a {
 .price-controls .max-price {
   width: 100px;
   padding-left: 53px;
-
 }
 
 .price-controls input {
-  width: 32px;
-  margin: 0 0;
+  width: 60px;
+  margin: 0;
+
   color: inherit;
   font: inherit;
+
   background: none;
   border: none;
-  outline: 0;
 }
 
 .range-controls {
   position: relative;
+
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
+
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
+
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
+
   width: 4px;
   height: 4px;
+
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
@@ -741,7 +747,7 @@ a {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 33px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -750,13 +756,13 @@ a {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
-  outline: 0;
 }
 
 .btn-transparent:hover {
   color: #000000;
   background: #ffffff;
 }
+
 
 .result-sort {
   min-height: 86px;
@@ -1026,7 +1032,6 @@ a {
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
   z-index: 1;
-
 }
 
 @-webkit-keyframes bounce {

@@ -22,8 +22,12 @@
   </div>
 </header>
 <main class="container">
-  <h1 class="visually-hidden">Подходящие варианты жилья</h1>
+  <h1 class="visually-hidden">Подбор вариантов жилья</h1>
+
+
   <section class="filters">
+
+
     <form class="filter" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend>Инфраструктура:</legend>
@@ -42,8 +46,6 @@
           </li>
         </ul>
       </fieldset>
-    </form>
-    <form class="filter" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend>Тип жилья:</legend>
         <ul>
@@ -61,8 +63,7 @@
           </li>
         </ul>
       </fieldset>
-    </form>
-    <form class="filter-range" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="filter-range">
       <div class="filter-range-title">Стоимость в сутки (р):</div>
       <div class="price-controls">
         <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -76,9 +77,10 @@
         <div class="range-toggle range-toggle-max"></div>
       </div>
       <button class="btn-transparent" type="submit">Показать</button>
+    </fieldset>
     </form>
   </section>
-  <section class="result-sort">
+    <section class="result-sort">
     <div class="sort">
       <h2>Найдено: 3</h2>
       <h3>Сортировка:</h3>
