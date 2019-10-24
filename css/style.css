@@ -22,11 +22,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/*.container {*/
-/*  width: 1200px;*/
-/*  margin: 0 auto;*/
-/*}*/
-
 .cover {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 1, 0.2);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 1, 0.2);
@@ -1273,6 +1268,7 @@ a {
   margin-top: 8px;
   background-image: url("../img/calendar.svg");
   fill: #cacaca;
+  cursor: pointer;
 }
 
 .booking-item svg:hover {
