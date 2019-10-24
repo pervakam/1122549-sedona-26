@@ -198,6 +198,7 @@ a {
 .reason-city-image {
   width: 800px;
   height: 256px;
+  background-color: #81b3d2;
   background-image: url("../img/city.jpg");
   background-position-y: -77px;
   background-size: cover;
@@ -297,6 +298,7 @@ a {
 .reason-canyon-image {
   width: 800px;
   height: 256px;
+  background-color: #81b3d2;
   background-image: url("../img/canyon.jpg");
   background-position-y: -77px;
   background-size: cover;
@@ -528,7 +530,6 @@ a {
 }
 
 .developer p {
-  /*display: block;*/
   width: 75px;
   margin: 10px 0 0 3px;
 }
@@ -881,9 +882,6 @@ a {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /*-webkit-box-align: center;*/
-  /*-ms-flex-align: center;*/
-  /*align-items: center;*/
   border-bottom: 1px solid #f2f2f2;
   background-color: #ffffff;
 }
