@@ -22,6 +22,23 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Временно для сетки */
+/* Временно для сетки */
+body {
+  background-image: url("../img/sedona-index.jpg");
+  background-size: 1280px auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+html {
+  opacity: 0.8;
+}
+
+/* Временно для сетки */
+/* Временно для сетки */
+
+
 .cover {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 1, 0.2);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 1, 0.2);
@@ -49,7 +66,7 @@ a {
 }
 
 .site-navigation {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   display: -webkit-box;
@@ -79,22 +96,18 @@ a {
 }
 
 .site-navigation li:nth-child(2) {
-  padding-right: 122px;
-}
-
-.site-navigation li:nth-child(3) {
-  padding-left: 122px;
+  margin-right: 244px;
 }
 
 .site-navigation .site-navigation-left {
   width: 167px;
-  padding: 21px 0 23px 72px;
+  padding: 20px 0 23px 72px;
   text-align: left;
 }
 
 .site-navigation .site-navigation-right {
   width: 166px;
-  padding: 21px 73px 23px 0;
+  padding: 20px 73px 23px 0;
   text-align: right;
 }
 
@@ -141,15 +154,16 @@ a {
   background-position: bottom;
 }
 
+
 .welcome img {
   width: 459px;
   height: 353px;
-  margin-bottom: 79px;
+  margin-bottom: 81px;
 }
 
 .intro {
   min-height: 99px;
-  padding: 60px 0 58px;
+  padding: 62px 0 51px;
   margin: -4px 0 0 0;
   background-color: #ffffff;
   box-shadow: none;
@@ -170,7 +184,7 @@ a {
 .intro p {
   color: #333333;
   font-weight: 400;
-  margin: 29px auto 0;
+  margin: 28px auto 0;
 }
 
 .reason-item {
@@ -184,24 +198,30 @@ a {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: justify-all;
-  list-style: none;
+
 }
 
-.reason-item .reason-city {
+.reason-item .reason-city,
+.reason-item .reason-canyon{
   width: 400px;
-  min-height: 256px;
+  height: 255px;
   background-color: #81b3d2;
   color: #ffffff;
   line-height: 21px;
 }
 
 .reason-city-image {
+  position: relative;
+  overflow: hidden;
   width: 800px;
-  height: 256px;
-  background-color: #81b3d2;
-  background-image: url("../img/city.jpg");
-  background-position-y: -77px;
-  background-size: cover;
+  height: 255px;
+}
+
+.reason-city-image img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -65px;
 }
 
 .reason-city h2 {
@@ -251,7 +271,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 60px 50px 85px 50px;
+  margin: 60px 50px 82px 50px;
 }
 
 .advantages-list li:nth-child(2) {
@@ -261,7 +281,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 61px 50px 87px 50px;
+  margin: 61px 50px 84px 50px;
 }
 
 .advantages-list li:nth-child(3) {
@@ -271,7 +291,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 56px 50px 86px 50px;
+  margin: 56px 50px 83px 50px;
 }
 
 .advantages-item h3 {
@@ -287,21 +307,18 @@ a {
   margin: 24px auto 0;
 }
 
-.reason-item .reason-canyon {
-  width: 400px;
-  min-height: 256px;
-  background-color: #81b3d2;
-  color: #ffffff;
-  line-height: 21px;
+.reason-canyon-image {
+  position: relative;
+  overflow: hidden;
+  width: 800px;
+  height: 255px;
 }
 
-.reason-canyon-image {
-  width: 800px;
-  height: 256px;
-  background-color: #81b3d2;
-  background-image: url("../img/canyon.jpg");
-  background-position-y: -77px;
-  background-size: cover;
+.reason-canyon-image img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -65px;
 }
 
 .reason-canyon h2 {
@@ -398,6 +415,7 @@ a {
 
 .check-button {
   display: inline-block;
+  vertical-align: middle;
   width: 568px;
   min-height: 18px;
   padding: 30px 0;
@@ -643,7 +661,7 @@ a {
 .filter-range-title {
   text-align: left;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
 }
@@ -1017,7 +1035,7 @@ a {
 
 .booking {
   width: 458px;
-  top: 2174px;
+  top: 2170px;
   left: 50%;
   margin-left: -284px;
   padding: 55px 55px;
