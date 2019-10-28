@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -11,29 +12,29 @@ body {
   background-color: #f2f2f2;
 }
 
+
+/* Временно для сетки */
+/* Временно для сетки */
+
+/*body {*/
+/*  background-image: url("../img/sedona-index.jpg");*/
+/*  background-size: 1280px auto;*/
+/*  background-position: top center;*/
+/*  background-repeat: no-repeat;*/
+/*}*/
+
+/*html {*/
+/*  opacity: 0.7;*/
+/*}*/
+
+/* Временно для сетки */
+/* Временно для сетки */
+
+
 .inner-page {
   color: #000000;
   background-color: #f2f2f2;
-
 }
-
-/* Временно для сетки */
-/* Временно для сетки */
-
-body {
-  background-image: url("../img/sedona-hotels.jpg");
-  background-size: 1280px auto;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-html {
-  opacity: 0.7;
-}
-
-/* Временно для сетки */
-/* Временно для сетки */
-
 
 .cover {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 1, 0.2);
@@ -57,10 +58,6 @@ a {
   overflow: hidden;
 }
 
-/*.main-menu {*/
-/*  margin-bottom: 76px;*/
-/*}*/
-
 .site-navigation {
   background-color: #ffffff;
   width: 100%;
@@ -73,7 +70,12 @@ a {
   flex-wrap: wrap;
 }
 
-.logo {
+.page-header,
+.page-main{
+  position: relative;
+}
+
+.page-header .logo {
   position: absolute;
   background-color: transparent;
   top: -1px;
@@ -134,7 +136,7 @@ a {
 }
 
 .welcome {
-  background: url("../img/intro-mask.svg") no-repeat bottom,
+  background: url("../img/intro-mask.svg") no-repeat top 454px center,
   #81b3d2 url("../img/backgroundphoto.jpg") no-repeat top -80px center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,8 +163,8 @@ a {
 
 .intro {
   min-height: 99px;
-  padding: 60px 0 51px;
-  margin: -2px 0 0 0;
+  padding: 59px 0 50px;
+  /*margin: -2px 0 0 0;*/
   background-color: #ffffff;
   box-shadow: none;
 }
@@ -442,7 +444,7 @@ a {
 
 .map p {
   display: block;
-  top: 2170px;
+  top: 1601px;
   position: absolute;
   margin: 0 auto;
   z-index: -1;
@@ -589,11 +591,11 @@ a {
 }
 
 .filter legend {
-  text-align: left;
+  text-align: justify;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .filter ul {
@@ -627,7 +629,7 @@ a {
   vertical-align: middle;
   margin-left: -15px;
   margin-right: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .filter-option input[type="checkbox"]:checked + label:before {
@@ -685,8 +687,7 @@ a {
   display: inline-block;
   font-size: 14px;
   line-height: 30px;
-  vertical-align: top;
-
+  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -697,9 +698,9 @@ a {
 }
 
 .price-controls input {
+  height: 30px;
   width: 60px;
   margin: 0;
-
   color: inherit;
   font: inherit;
 
@@ -780,57 +781,57 @@ a {
 }
 
 .result-sort {
-  min-height: 86px;
-  padding: 0 71px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: left;
+  padding: 30px 72px 27px 71px;
   border-bottom: 1px solid #f2f2f2;
   background-color: #ffffff;
 }
 
-.sort-type,
-.sort-rang,
-.sort {
-  list-style: none;
+
+.result-sort .sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-decoration: none;
-}
-
-.sort-type {
-  padding: 0 0 0 0;
-  text-align: left;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: left;
+  width: 1000px;
+  vertical-align: top;
+  box-sizing: border-box;
 }
 
 .sort h2 {
   font-size: 21px;
   font-weight: 700;
-  margin-right: 48px;
+  line-height: 26px;
+  margin: 0 0;
+  padding: 0 0;
 }
 
 .sort h3 {
   font-size: 12px;
   font-weight: 400;
-  padding-top: 8px;
-  margin-right: 40px;
+  margin: 0 0;
+  padding: 4px 41px 0 48px;
+}
+
+.sort .sort-type {
+  margin: 0 0;
+  padding: 0 0;
 }
 
 .sort-type li {
+  display: inline-block;
+  padding: 3px 29px 0 0;
+  list-style: none;
+  vertical-align: top;
   font-weight: 400;
   font-size: 12px;
-  line-height: 18px;
-  color: #000000;
-  margin: auto 0;
-  padding-top: 3px;
-  padding-right: 32px;
 }
 
 .sort-type a {
@@ -862,9 +863,26 @@ a {
   opacity: 1;
 }
 
-.sort-rang li {
-  padding: 2px 1px 0 11px;
+.result-sort .sort-rang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 34px;
+  padding: 0 0;
+  margin: 3px 0 0 24px;
+  text-align: right;
+  box-sizing: border-box;
+  list-style: none;
 }
+
+/*.sort-rang li {*/
+/*  margin: 0 0;*/
+/*  padding: 0 0;*/
+/*padding: 0 2px 0 10px;*/
+/*}*/
 
 .sort-rang path {
   fill: #cacaca;
@@ -889,7 +907,7 @@ a {
 
 .result-item {
   min-height: 126px;
-  padding: 24px 72px 0;
+  padding: 24px 73px 0 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,7 +934,7 @@ a {
 }
 
 .description p {
-  margin: 4px 0 5px;
+  margin: 2px 0 10px;
 }
 
 .description span {
@@ -926,7 +944,7 @@ a {
 }
 
 .result-item img {
-  margin-top: 7px;
+  margin-top: 6px;
 }
 
 .about {
@@ -1061,7 +1079,7 @@ a {
   position: absolute;
   background-color: #ffffff;
   width: 458px;
-  top: 2170px;
+  top: 1601px;
   left: 50%;
   margin-left: -284px;
   padding: 55px 55px;
