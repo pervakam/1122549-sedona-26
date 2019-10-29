@@ -13,24 +13,6 @@ body {
 }
 
 
-/* Временно для сетки */
-/* Временно для сетки */
-
-/*body {*/
-/*  background-image: url("../img/sedona-index.jpg");*/
-/*  background-size: 1280px auto;*/
-/*  background-position: top center;*/
-/*  background-repeat: no-repeat;*/
-/*}*/
-
-/*html {*/
-/*  opacity: 0.7;*/
-/*}*/
-
-/* Временно для сетки */
-/* Временно для сетки */
-
-
 .inner-page {
   color: #000000;
   background-color: #f2f2f2;
@@ -162,9 +144,9 @@ a {
 }
 
 .intro {
-  min-height: 99px;
-  padding: 59px 0 50px;
-  /*margin: -2px 0 0 0;*/
+  min-height: 100px;
+  padding: 58px 0 52px;
+  margin: -1px 0 0 0;
   background-color: #ffffff;
   box-shadow: none;
 }
@@ -184,11 +166,11 @@ a {
 .intro p {
   color: #333333;
   font-weight: 400;
-  margin: 28px auto 0;
+  margin: 27px auto 0;
 }
 
 .reason-item {
-  min-height: 256px;
+  min-height: 255px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,7 +186,6 @@ a {
 .reason-item .reason-city,
 .reason-item .reason-canyon {
   width: 400px;
-  height: 255px;
   background-color: #81b3d2;
   color: #ffffff;
   line-height: 21px;
@@ -243,7 +224,7 @@ a {
   min-width: 280px;
   min-height: 42px;
   font-weight: 400;
-  margin: 22px 55px 60px;
+  margin: 22px 30px 59px;
 }
 
 .advantages {
@@ -271,27 +252,27 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 59px 50px 81px 50px;
+  margin: 59px 50px 80px 50px;
 }
 
 .advantages-list li:nth-child(2) {
   min-height: 182px;
-  width: 300px;
+  width: 360px;
   text-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 61px 50px 83px 50px;
+  margin: 61px 20px 82px 20px;
 }
 
 .advantages-list li:nth-child(3) {
   min-height: 188px;
-  width: 300px;
+  width: 360px;
   text-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 55px 50px 82px 50px;
+  margin: 55px 20px 81px 20px;
 }
 
 .advantages-item h3 {
@@ -304,7 +285,7 @@ a {
 
 .advantages-item p {
   line-height: 21px;
-  margin: 25px auto 0;
+  margin: 26px auto 0;
 }
 
 .reason-canyon-image {
@@ -366,8 +347,8 @@ a {
 
 .morereason-item {
   min-height: 143px;
-  width: 310px;
-  padding: 48px 50px 59px 50px;
+  width: 350px;
+  padding: 47px 30px 59px 30px;
 }
 
 .morereason-item h2 {
@@ -386,7 +367,7 @@ a {
 .morereason-item p {
   min-width: 210px;
   font-weight: 400;
-  margin: 23px auto 0;
+  margin: 21px auto 0;
 }
 
 .check {
@@ -410,7 +391,7 @@ a {
 .check p {
   min-height: 40px;
   line-height: 24px;
-  margin: 25px 0 48px;
+  margin: 25px 0 47px;
 }
 
 .check-button {
@@ -452,7 +433,7 @@ a {
 
 .page-footer {
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
   margin: -129px auto;
   background-color: #ffffff;
   opacity: 0.9;
@@ -461,7 +442,7 @@ a {
 
 .inner-page .page-footer {
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
   margin: 0 auto;
   background-color: #ffffff;
   opacity: 1;
@@ -472,7 +453,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 36px 101px 36px 132px;
+  padding: 36px 101px 34px 132px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -878,12 +859,6 @@ a {
   list-style: none;
 }
 
-/*.sort-rang li {*/
-/*  margin: 0 0;*/
-/*  padding: 0 0;*/
-/*padding: 0 2px 0 10px;*/
-/*}*/
-
 .sort-rang path {
   fill: #cacaca;
 }
@@ -934,7 +909,7 @@ a {
 }
 
 .description p {
-  margin: 2px 0 10px;
+  margin: 2px 0 8px;
 }
 
 .description span {
@@ -947,13 +922,6 @@ a {
   margin-top: 6px;
 }
 
-.about {
-  margin-top: 1px;
-  margin-left: 29px;
-  border-spacing: 0;
-  height: 75px;
-}
-
 .name {
   display: block;
   padding: 0 1px;
@@ -961,7 +929,7 @@ a {
   font-size: 21px;
   font-weight: 700;
   vertical-align: top;
-  margin: 1px 0;
+  margin: 1px auto 1px 0;
 }
 
 .name:hover {
@@ -1079,7 +1047,7 @@ a {
   position: absolute;
   background-color: #ffffff;
   width: 458px;
-  top: 1601px;
+  top: 1604px;
   left: 50%;
   margin-left: -284px;
   padding: 55px 55px;
