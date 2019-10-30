@@ -16,7 +16,7 @@ a{text-decoration:none}
 .site-navigation a:active{color:#766357}
 .inner-page .hotels{color:#766357}
 .site-navigation,.advantages,.social-networks li,.result li,.filter li{list-style:none}
-.welcome{background:url(../img/intro-mask.svg) no-repeat top 454px center,#81b3d2 url(../img/backgroundphoto.jpg) no-repeat top -80px center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.welcome{background:url(../img/intro-mask.svg) no-repeat top 454px center,#a98a88 url(../img/backgroundphoto.jpg) no-repeat top -80px center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .welcome img{width:459px;height:353px;margin-top:76px;margin-bottom:82px}
 .intro{min-height:100px;padding:58px 0 52px;margin:-1px 0 0;background-color:#fff;box-shadow:none}
 .intro h1{width:600px;font-size:21px;font-weight:700;line-height:26px;align-items:center;text-align:center;justify-content:center;margin:0 auto;padding:0}
@@ -68,18 +68,21 @@ a{text-decoration:none}
 .developer-logo{width:115px;height:41px;margin:4px 0}
 .developer-logo svg:hover path{fill:#81b3d2}
 .developer-logo svg:active path{fill:#bdbbbc}
-.filters{background:#81b3d2 url(../img/filter-background.jpg) no-repeat top -306px center;position:relative;width:1200px;min-height:217px;margin:0}
+.filters{background:#6e5d5b url(../img/filter-background.jpg) no-repeat top -306px center;position:relative;width:1200px;min-height:217px;margin:0}
 .filter{padding:25px 72px 5px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex}
 .filter fieldset{width:200px;margin:0 67px 0 0;padding:0;border:none}
-.filter legend{text-align:justify;color:#fff;font-size:16px;font-weight:700;margin-bottom:11px}
+.filter legend{text-align:justify;color:#fff;font-size:16px;font-weight:700;margin-bottom:10px}
 .filter ul{text-align:left;padding:0;margin:0;color:#fff;line-height:46px}
 .filter-option{cursor:pointer}
 .filter-option label{cursor:pointer;user-select:none}
 .filter-option input[type="checkbox"]{opacity:0}
-.filter-option input[type="checkbox"] + label:before{content:"";display:inline-block;height:23px;width:27px;background-image:url(../img/checkbox-off.svg);background-repeat:no-repeat;vertical-align:middle;margin-left:-15px;margin-right:15px;margin-bottom:3px}
+.infrastructure input[type="checkbox"] + label:before{margin-left:-16px;margin-right:11px;margin-bottom:3px}
+.type-of-housing input[type="checkbox"] + label:before{margin-left:-15px;margin-right:15px;margin-bottom:3px}
+.filter-option input[type="checkbox"] + label:before{content:"";display:inline-block;height:23px;width:27px;background-image:url(../img/checkbox-off.svg);background-repeat:no-repeat;vertical-align:middle}
 .filter-option input[type="checkbox"]:checked + label:before{background-image:url(../img/checkbox-on.svg)}
 .filter-option input[type="checkbox"]:checked:disabled + label:before{background:url(../img/checkbox-on-dis.svg)}
 .filter-option input[type="checkbox"]:disabled + label:before{background:url(../img/checkbox-off-dis.svg) no-repeat}
+.filter-option input[type="checkbox"]:hover + label,.filter-option input[type="checkbox"]:focus + label{mso-outline-style:auto;outline:auto}
 .filter .filter-range{width:340px;margin:3px 0 28px 233px;color:#fff;text-transform:uppercase}
 .filter-range-title{text-align:left;margin-bottom:10px;font-weight:700;font-size:16px;line-height:21px}
 .price-controls{position:relative;height:32px;margin-bottom:20px;font-size:0;border:2px solid #fff;border-radius:2px}

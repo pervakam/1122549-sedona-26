@@ -12,7 +12,6 @@ body {
   background-color: #f2f2f2;
 }
 
-
 .inner-page {
   color: #000000;
   background-color: #f2f2f2;
@@ -119,7 +118,7 @@ a {
 
 .welcome {
   background: url("../img/intro-mask.svg") no-repeat top 454px center,
-  #81b3d2 url("../img/backgroundphoto.jpg") no-repeat top -80px center;
+  #a98a88 url("../img/backgroundphoto.jpg") no-repeat top -80px center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,7 +548,7 @@ a {
 
 
 .filters {
-  background: #81b3d2 url("../img/filter-background.jpg") no-repeat top -306px center;
+  background: #6e5d5b url("../img/filter-background.jpg") no-repeat top -306px center;
   position: relative;
   width: 1200px;
   min-height: 217px;
@@ -576,7 +575,7 @@ a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 .filter ul {
@@ -600,6 +599,18 @@ a {
   opacity: 0;
 }
 
+.infrastructure input[type="checkbox"] + label:before {
+  margin-left: -16px;
+  margin-right: 11px;
+  margin-bottom: 3px;
+}
+
+.type-of-housing input[type="checkbox"] + label:before {
+  margin-left: -15px;
+  margin-right: 15px;
+  margin-bottom: 3px;
+}
+
 .filter-option input[type="checkbox"] + label:before {
   content: "";
   display: inline-block;
@@ -608,9 +619,6 @@ a {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   vertical-align: middle;
-  margin-left: -15px;
-  margin-right: 15px;
-  margin-bottom: 3px;
 }
 
 .filter-option input[type="checkbox"]:checked + label:before {
@@ -619,11 +627,16 @@ a {
 
 .filter-option input[type="checkbox"]:checked:disabled + label:before {
   background: url("../img/checkbox-on-dis.svg");
-
 }
 
 .filter-option input[type="checkbox"]:disabled + label:before {
   background: url("../img/checkbox-off-dis.svg") no-repeat;
+}
+
+.filter-option input[type="checkbox"]:hover + label,
+.filter-option input[type="checkbox"]:focus + label {
+  mso-outline-style: auto;
+  outline: auto;
 }
 
 .filter .filter-range {
